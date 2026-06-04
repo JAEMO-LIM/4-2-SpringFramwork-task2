@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>403</title></head>
+<body>
+<h2>403 - 접근 권한이 없습니다 (ADMIN 전용)</h2>
+<a th:href="@{/home}">홈으로</a>
+<footer>
+    <p th:text="${'학번 : 2171399 | 성명 : 임재모 | 실습 수행: ' + #temporals.format(#temporals.createNow(), 'yyyy-MM-dd HH:mm:ss')}"></p>
+</footer>
+</body>
+</html>

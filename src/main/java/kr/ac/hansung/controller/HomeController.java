@@ -16,6 +16,11 @@ public class HomeController {
         return "redirect:/home";
     }
 
+    @GetMapping("/access-denied")
+    public String accessDenied() {
+        return "error/403";
+    }
+
     @GetMapping("/home")
     public String home(Authentication authentication, Model model) {
         model.addAttribute("username", authentication.getName());
